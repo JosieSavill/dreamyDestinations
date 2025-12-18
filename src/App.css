@@ -1,0 +1,70 @@
+/* Global reset and nice font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f8f9fa; /* Soft light gray */
+  color: #212529; /* Dark text for readability */
+  margin: 0 5%;
+
+}
+
+/* Main app container - center everything vertically and horizontally */
+.App {
+  text-align: center;
+  padding: 60px 0; /* Top/bottom 60px, left/right 40px  - adds breathing room */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers horizontally */
+  justify-content: center; /* Centers vertically */
+  margin: 0 auto;
+  
+}
+
+/* Big beautiful heading */
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #495057;
+  margin-bottom: 24px;
+}
+
+/* Paragraph text */
+p {
+  font-size: 1.4rem;
+  max-width: 700px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  color: #495057;
+}
+
+/* Nice white card for content */
+.card {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+#root {
+  padding: 0 80px;    /* Left/right space = change 80px to more/less */
+  max-width: 1600px;  /*Optional:  limits total width on hube screens */
+  margin: 0 auto;  /* Centers everything */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 0 20px;  /* Less isde space on mobile */
+  }
+}
